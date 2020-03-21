@@ -50,10 +50,10 @@ Yearly_Change = Yearly_Close - Yearly_Open
 ws.Range("J" & Summary_Table_Row).Value = Yearly_Change
 
 If Yearly_Open = 0 Then
-    Percent_Change = 0
+Percent_Change = 0
 Else
-    Yearly_Open = ws.Range("C" & Previous_Amount)
-    Percent_Change = Yearly_Change / Yearly_Open
+Yearly_Open = ws.Range("C" & Previous_Amount)
+Percent_Change = Yearly_Change / Yearly_Open
 End If
 ws.Range("K" & Summary_Table_Row).Value = Percent_Change
 ws.Range("K" & Summary_Table_Row).NumberFormat = "0.00%"
